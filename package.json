@@ -1,5 +1,10 @@
 {
   "name": "ow2",
+  "author": {
+    "name": "Mihir Patel",
+    "url": "https://www.mihirpatel.co"
+  },
+  "description": "Statistic tracker for upcoming Overwatch 2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,8 +22,11 @@
     "@types/node": "17.0.23",
     "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
+    "autoprefixer": "^10.4.4",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.1",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
     "typescript": "4.6.3"
   }
 }
