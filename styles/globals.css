@@ -7,3 +7,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+@layer components {
+  .mobile-links {
+    @apply whitespace-nowrap text-base font-medium text-gray-500 dark:text-white hover:text-orange-400 dark:hover:text-orange-400;
+  }
+}

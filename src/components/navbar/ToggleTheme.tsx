@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaMoon, FaSun } from 'react-icons/fa'
+import { SunIcon, MoonIcon } from '@heroicons/react/solid'
 
 const ToggleTheme = () => {
   const [theme, setTheme] = useState(false)
@@ -22,7 +22,18 @@ const ToggleTheme = () => {
       document.documentElement.classList.remove('dark')
     }
   }
-  return <button onClick={handleTheme}>{theme ? <FaSun /> : <FaMoon />}</button>
+  return (
+    <button
+      className="hover:text-orange-400 dark:hover:text-orange-400 dark:text-white "
+      onClick={handleTheme}
+    >
+      {theme ? (
+        <SunIcon className="w-6 h-6" />
+      ) : (
+        <MoonIcon className="w-6 h-6" />
+      )}
+    </button>
+  )
 }
 
 export default ToggleTheme
