@@ -8,6 +8,18 @@ body {
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
 @layer components {
   .mobile-links {
     @apply whitespace-nowrap text-base font-medium text-gray-500 dark:text-white hover:text-orange-400 dark:hover:text-orange-400;
