@@ -11,7 +11,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Statistic tracker for Overwatch 2" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Main />
     </>
   )
